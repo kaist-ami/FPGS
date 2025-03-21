@@ -1,3 +1,3 @@
 # FPGS
 
-Comming soon
+Coming soon
