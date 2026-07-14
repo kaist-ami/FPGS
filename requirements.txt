@@ -1,0 +1,14 @@
+kmeans_pytorch==0.3
+matplotlib
+imageio
+tqdm
+opencv-python==4.6.0.66
+tensorboard
+lpips
+plyfile==0.9
+scikit-image
+numpy==1.23.5
+
+# submodules/diff-gaussian-rasterization-depth-acc
+# submodules/f-diff-gaussian-rasterization_16 
+# submodules/simple-knn 
