@@ -23,32 +23,32 @@ pip install -r requirements.txt
 ```
 
 ### Download Calibrated Datasets
-To run FPGS, please download [the calibrated dataset](https://drive.google.com/drive/folders/1l45X5sgjf134KRJkyiXLnPvL4RBIz45l) provided by [StyleGaussian](https://github.com/Kunhao-Liu/StyleGaussian) and put it in ./data. 
+To run FPGS, please download [the calibrated scenes](https://drive.google.com/drive/folders/1l45X5sgjf134KRJkyiXLnPvL4RBIz45l) provided by [StyleGaussian](https://github.com/Kunhao-Liu/StyleGaussian) and put it in ./data. 
 
 Or you can use your custom dataset by calibrating your multi-view scene with `COLMAP`, by following the original [3D Gaussian Splatting github repository](https://github.com/graphdeco-inria/gaussian-splatting).
 
 ## Preprocess
 Run below commands to extract semantic features from the scene and trian autoencoder for compressing semantic features. 
 ```bash
-python preprocess.py --data_path data/truck 
+python preprocess.py --data_path data/garden 
 ```
 
 ## Training Scene
 Run below commands to train a stylizable 3D scene. 
 ```bash
-python train_features.py -s data/truck -m output/truck
+python train_features.py -s data/garden -m output/garden
 ```
 
 ## Style Transfer 
 Run below commands to transfer the style of a 3D scene to the refernece images in ./styles.
 
 ```bash
-python render_features.py -m output/truck --save_ply --style_dir styles
+python render_features.py -m output/garden --save_ply --style_dir styles
 ```
 <details><summary>Here are the controllable hyperparameters.</summary>
       
 ```bash
-python render_features.py -m output/truck --semantic_model dino --save_ply --style_dir styles --temperature 100 --blending_ratio 0.3 --stylize_iterations 2 
+python render_features.py -m output/garden --semantic_model dino --save_ply --style_dir styles --temperature 100 --blending_ratio 0.3 --stylize_iterations 2 
 ```
 
 * temperature - Temperature of softmax operation for semantic correspondence matching. 
