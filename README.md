@@ -1,4 +1,4 @@
-# FPRF (AAAI 2024)
+# FPGS (IJCV 2026)
 ### [Project Page](https://kim-geonu.github.io/FPGS/) | [arXiv](https://arxiv.org/abs/2503.09635)
 This repository contains a pytorch implementation for the IJCV 2026 paper, [FPGS: Feed-Forward Semantic-aware Photorealistic Style Transfer of Large-Scale Gaussian Splatting](https://arxiv.org/abs/2503.09635).
 
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 
 ### Download calibrated datasets
-To run FPGS, please download [the calibrated dataset](https://drive.google.com/drive/folders/1l45X5sgjf134KRJkyiXLnPvL4RBIz45l) provided by [StyleGaussian](https://github.com/Kunhao-Liu/StyleGaussian) and put it in ./data. 
+To run FPGS, please download the [calibrated scenes](https://drive.google.com/drive/folders/1l45X5sgjf134KRJkyiXLnPvL4RBIz45l) provided by [StyleGaussian](https://github.com/Kunhao-Liu/StyleGaussian) and put it in ./data. 
 
 ## Preprocess
 Run below commands to extract semantic features from the scene and trian autoencoder for compressing semantic features. 
