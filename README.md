@@ -1,7 +1,9 @@
-# FPRF (AAAI 2024)
+# FPGS (IJCV 2026)
 ### [Project Page](https://kim-geonu.github.io/FPGS/) | [arXiv](https://arxiv.org/abs/2503.09635)
 This repository contains a pytorch implementation for the IJCV 2026 paper, [FPGS: Feed-Forward Semantic-aware Photorealistic Style Transfer of Large-Scale Gaussian Splatting](https://arxiv.org/abs/2503.09635).
 
+
+https://github.com/user-attachments/assets/c30eec7a-2362-401f-bea1-a4526748c2aa
 
 ## Getting Started
 This code was developed on Ubuntu 24.04 with Python 3.9, CUDA 11.8 and PyTorch 2.0.0. Later versions should work, but have not been tested.
