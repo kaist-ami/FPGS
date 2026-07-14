@@ -3,6 +3,11 @@
 This repository contains a pytorch implementation for the IJCV 2026 paper, [FPGS: Feed-Forward Semantic-aware Photorealistic Style Transfer of Large-Scale Gaussian Splatting](https://arxiv.org/abs/2503.09635).
 
 
+
+https://github.com/user-attachments/assets/37dd9979-4f39-410b-89da-5d420b95e3d4
+
+
+
 ## Getting Started
 This code was developed on Ubuntu 24.04 with Python 3.9, CUDA 11.8 and PyTorch 2.0.0. Later versions should work, but have not been tested.
 
