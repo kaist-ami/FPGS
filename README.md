@@ -22,8 +22,10 @@ Install the remaining requirements with pip:
 pip install -r requirements.txt
 ```
 
-### Download calibrated datasets
+### Download Calibrated Datasets
 To run FPGS, please download [the calibrated dataset](https://drive.google.com/drive/folders/1l45X5sgjf134KRJkyiXLnPvL4RBIz45l) provided by [StyleGaussian](https://github.com/Kunhao-Liu/StyleGaussian) and put it in ./data. 
+
+Or you can use your custom dataset by calibrating your multi-view scene with `COLMAP`, by following the original [3D Gaussian Splatting github repository](https://github.com/graphdeco-inria/gaussian-splatting).
 
 ## Preprocess
 Run below commands to extract semantic features from the scene and trian autoencoder for compressing semantic features. 
@@ -37,7 +39,7 @@ Run below commands to train a stylizable 3D scene.
 python train_features.py -s data/truck -m output/truck
 ```
 
-## Style transfer 
+## Style Transfer 
 Run below commands to transfer the style of a 3D scene to the refernece images in ./styles.
 
 ```bash
