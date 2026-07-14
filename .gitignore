@@ -23,7 +23,6 @@ drums/
 *.npy
 *.gif
 style/
-styles/
 *.DS_Store
 
 output/
