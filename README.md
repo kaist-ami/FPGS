@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ### Download Calibrated Datasets
 To run FPGS, please download [the calibrated scenes](https://drive.google.com/drive/folders/1l45X5sgjf134KRJkyiXLnPvL4RBIz45l) provided by [StyleGaussian](https://github.com/Kunhao-Liu/StyleGaussian) and put it in ./data. 
 
-Or you can use your custom dataset by calibrating your multi-view scene with `COLMAP`, by following the original [3D Gaussian Splatting github repository](https://github.com/graphdeco-inria/gaussian-splatting).
+You can also use your custom dataset by calibrating your multi-view scene with `COLMAP` following the original [3D Gaussian Splatting github repository](https://github.com/graphdeco-inria/gaussian-splatting).
 
 ## Preprocess
 Run below commands to extract semantic features from the scene and trian autoencoder for compressing semantic features. 
